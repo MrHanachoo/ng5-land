@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('ng4-land App', () => {
+describe('ng5-land App', () => {
   let page: AppPage;
 
   beforeEach(() => {
@@ -9,6 +9,6 @@ describe('ng4-land App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('Welcome to my Angular 5 Land! by Mr.Hanachoo');
   });
 });
