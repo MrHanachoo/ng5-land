@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.redText {
+  color: crimson;
+}
+.center {
+  text-align: center;
+}
+.header {
+  margin-bottom: 100px;
+}
