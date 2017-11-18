@@ -7,12 +7,4 @@
   </li>
 </ul>
 
-<div *ngIf="selectedMovie">
-  <h2> {{ selectedMovie.title | uppercase }} Details</h2>
-  <div>imdbID: {{selectedMovie.imdbID}}</div>
-  <div>
-    <label>title:
-       <input [(ngModel)]="selectedMovie.title" placeholder="search a movie by title">
-     </label>
-  </div>
-</div>
+<app-movie-detail [movie]="selectedMovie"></app-movie-detail>

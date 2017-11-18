@@ -1,0 +1,9 @@
+<div *ngIf="movie">
+  <h2> {{ movie.title | uppercase }} Details</h2>
+  <div>imdbID: {{movie.imdbID}}</div>
+  <div>
+    <label>title:
+       <input [(ngModel)]="movie.title" placeholder="search a movie by title">
+     </label>
+  </div>
+</div>
