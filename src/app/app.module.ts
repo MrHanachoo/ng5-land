@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
+import { MovieService } from './movie.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    MovieService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
