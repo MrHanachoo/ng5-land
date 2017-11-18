@@ -1,4 +1,4 @@
-export class Film {
+export class Movie {
   imdbID: String;
   title: String;
 }

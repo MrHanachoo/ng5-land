@@ -4,13 +4,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { FilmsComponent } from './films/films.component';
+import { MoviesComponent } from './movies/movies.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FilmsComponent
+    MoviesComponent
   ],
   imports: [
     BrowserModule,
