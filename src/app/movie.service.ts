@@ -4,13 +4,15 @@ import { of } from 'rxjs/observable/of';
 
 import { Movie } from './movie';
 import { MOVIES } from './mock-movies';
+import { MessageService } from './message.service';
 
 @Injectable()
 export class MovieService {
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 
   getMovies(): Observable<Movie[]> {
+    this.messageService.addToCache('MovieService: fetched data from remote API');
     return of(MOVIES);
   }
 }

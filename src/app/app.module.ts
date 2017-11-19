@@ -10,6 +10,7 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { MovieService } from './movie.service';
 import { MessagesComponent } from './messages/messages.component';
 import { HeaderComponent } from './header/header.component';
+import { MessageService } from './message.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HeaderComponent } from './header/header.component';
     FormsModule
   ],
   providers: [
-    MovieService
+    MovieService,
+    MessageService
   ],
   bootstrap: [AppComponent]
 })
