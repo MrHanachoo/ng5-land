@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { of } from 'rxjs/observable/of';
 
 import { Movie } from './movie';
 import { MOVIES } from './mock-movies';
@@ -8,7 +10,7 @@ export class MovieService {
 
   constructor() { }
 
-  getMovies(): Movie[] {
-    return MOVIES;
+  getMovies(): Observable<Movie[]> {
+    return of(MOVIES);
   }
 }
