@@ -11,6 +11,8 @@ import { MovieService } from './movie.service';
 import { MessagesComponent } from './messages/messages.component';
 import { HeaderComponent } from './header/header.component';
 import { MessageService } from './message.service';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { MessageService } from './message.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [
     MovieService,
