@@ -15,4 +15,8 @@ export class MovieService {
     this.messageService.addToCache('MovieService: fetched data from remote API');
     return of(MOVIES);
   }
+  getMovieDetails(id: String): Observable<Movie> {
+    this.messageService.addToCache(`MovieService: fetched movie id=${id}`);
+    return of(MOVIES.find(movie => movie.imdbID === id));
+  }
 }
