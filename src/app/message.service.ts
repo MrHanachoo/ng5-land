@@ -7,7 +7,7 @@ export class MessageService {
 
   constructor() { }
 
-  addToCache(message: String) {
+  addToLog(message: String) {
     this.messages.push(message);
   }
 
